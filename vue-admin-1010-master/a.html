@@ -1,0 +1,27 @@
+
+<body>
+
+
+    <script src="vue.min.js" ></script>
+    <div id="abc">
+        <!-- <input id="abc" type="text" v-model='Map.keywords'></input>
+        <input type="text"  :value="Map.keywords"/>
+        <p>信息是:{{Map.keywords}}</p> -->
+        <button  @click="search()">查询</button>
+    </div>
+    <script>
+        new Vue({
+            el:'#abc',
+            data:{
+                Map:{
+                    keywords:'尚硅谷'
+                }
+            },
+            methods:{
+                search(){
+                    console.log("search method....")
+                }
+            }
+        })
+    </script>
+</body>

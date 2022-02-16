@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <hr/>                                                                                                             
+        <table border="1">
+            <tr v-for=" list in userlist">
+                <td>
+                    {{list.name}}
+                </td>
+                <td>
+                    {{list.age}}
+                </td>
+                <td>
+                    {{list.sex}}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="vue.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                userlist: [
+                    {name:"a",age:18,sex:"1"},
+                    {name:"b",age:19,sex:"0"},
+                    {name:"c",age:22,sex:"1"}
+                ], 
+            }
+               
+            
+        })
+    </script>
+</body>
+
+</html>
